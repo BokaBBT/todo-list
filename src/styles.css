@@ -1,0 +1,111 @@
+.App {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-size: 34px;
+}
+p {
+  text-align: left;
+}
+
+button {
+  width: 87px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin-right: 16px;
+  background-color: #f0f0f0;
+  font-weight: 500;
+}
+
+.button-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.new-todo {
+  position: absolute;
+  right: 60px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e6e7;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.new-todo p {
+  font-weight: 700;
+}
+
+.new-todo textarea {
+  border: none;
+  border-radius: 8px;
+  width: 236px;
+  height: 120px;
+  padding: 13px;
+}
+
+.new-todo button {
+  background-color: #081e34;
+  color: white;
+  margin-top: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.list-item-selected {
+  background: #e4e6e7;
+}
+
+.list-item .delete-menu {
+  position: absolute;
+  top: 30px;
+  padding-top: 12px;
+  background: #e4e6e7;
+  box-shadow: 0px 4px 4px rgba(36, 33, 33, 0.16);
+  border-radius: 12px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.delete-menu div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.delete-menu div:hover {
+  background-color: rgba(8, 30, 52, 0.2);
+}
+
+.list-item .delete-menu img {
+  margin-right: 12px;
+}
+
+.list-item p {
+  margin: 0;
+  padding: 0;
+  margin-left: 12px;
+}
+
+.current-tab {
+  background-color: grey;
+  color: white;
+}
+
+.list-item-done {
+  text-decoration: line-through;
+  color: gray;
+}
